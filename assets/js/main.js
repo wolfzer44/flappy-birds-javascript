@@ -18,7 +18,7 @@
 
       this.background = game.add.tileSprite(0, 0, 400, 490, 'background');
 
-      this.bird = game.add.sprite(100, 245, 'bird');
+      this.bird = game.add.sprite(120, 265, 'bird');
       this.pipe = game.add.group();
       this.jumpSound = game.add.audio('jump');
 
