@@ -60,7 +60,6 @@
     },
 
     jump: function() {
-      // console.log(this.bird.body);
 
       let animation = game.add.tween(this.bird);
       this.jumpSound.play();
@@ -72,7 +71,7 @@
 
 
       this.bird.body.velocity.y = -350;
-      console.log('jump!');
+
       if (this.bird.alive == false)
         return;
     },
@@ -95,8 +94,6 @@
     },
 
     addRowOfPipes: function() {
-
-      console.log(this.score);
       this.score += 1;
       this.labelScore.text = this.score;
 
@@ -109,8 +106,6 @@
     },
 
     hidePipe: function() {
-
-      // console.log('show');
       if(this.bird.alive == false)
         return;
 
